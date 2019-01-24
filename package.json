@@ -1,0 +1,24 @@
+{
+  "name": "mom-please-get-me-so-me-zucchini-from-sho-p",
+  "version": "1.0.0",
+  "description": "Why won't mom get me zucchin i from shop >:(",
+  "main": "index.js",
+  "bin": {
+    "mom-please-get-me-so-me-zucchini-from-sho-p": "interpreter.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mom",
+    "zucchini"
+  ],
+  "author": "ducky",
+  "license": "ISC",
+  "dependencies": {
+    "xregexp": "^4.2.4"
+  }
+}
