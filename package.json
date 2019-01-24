@@ -1,10 +1,10 @@
 {
-  "name": "mom-please-get-me-so-me-zucchini-from-sho-p",
+  "name": "momzucchinijs",
   "version": "1.0.0",
   "description": "Why won't mom get me zucchin i from shop >:(",
   "main": "index.js",
   "bin": {
-    "mom-please-get-me-so-me-zucchini-from-sho-p": "interpreter.js"
+    "momzucchinijs": "interpreter.js"
   },
   "directories": {
     "lib": "lib"
@@ -19,6 +19,7 @@
   "author": "ducky",
   "license": "ISC",
   "dependencies": {
+    "esm": "^3.1.1",
     "xregexp": "^4.2.4"
   }
 }
