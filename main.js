@@ -1,6 +1,6 @@
 import readline from 'readline'
 
-import evaluate from './lib/mom-please-get-me-so-me-zucchini-from-sho-p.js'
+import evaluate from './lib/evaluate.js'
 
 const rl = readline.createInterface({
   input: process.stdin,
