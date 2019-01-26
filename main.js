@@ -1,20 +1,35 @@
 import readline from 'readline'
+import path from 'path'
+import fs from 'fs'
 
 import evaluate from './lib/evaluate.js'
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-  prompt: '-> hey mom '
-})
+let interactive = true
 
-rl.write('hello welcom e to mom please get zucchine thax. please start  program ok\n')
-rl.prompt()
+for (const arg of process.argv) {
+  if (path.extname(arg) === '.zucchinipleasemom') {
+    interactive = false
+    evaluate(fs.readFileSync(path.normalize(arg)))
+  }
+}
 
-let state
+if (interactive) createInteractiveCLI()
 
-rl.on('line', line => {
-  if (!state) state = evaluate(line)
-  else state = evaluate(line, state)
+function createInteractiveCLI () {
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+    prompt: '-> hey mom '
+  })
+
+  rl.write('hello welcom e to mom please get zucchine thax. please start  program ok\n')
   rl.prompt()
-})
+
+  let state
+
+  rl.on('line', line => {
+    if (!state) state = evaluate(line)
+    else state = evaluate(line, state)
+    rl.prompt()
+  })
+}
