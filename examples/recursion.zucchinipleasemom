@@ -1,0 +1,14 @@
+IGN <~ Testing recursion ~>
+
+PUSH 0
+
+ARC <r> {
+  DUP PUSH 10 EQL
+  IFF {
+    DEL
+    INC
+    INV r
+  }
+}
+
+INV r

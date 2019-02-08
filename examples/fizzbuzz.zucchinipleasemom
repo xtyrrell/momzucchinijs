@@ -1,0 +1,81 @@
+『ok im Borges now lol』
+
+IGN <~ FIZZBUZZ ~>
+
+ARC <FIZZBUZZ> {
+  IGN <~ Given N, the number at which we stop ~>
+  
+  DUP
+  100 100
+
+  WHILE {
+    DUP
+    100 100 100
+
+    SUB
+    100 0
+
+    IGN <~ Now we have i ~>
+    DUP
+    100 0 0
+
+    IGN <~ Check for Fizz ~>
+    (PUS 3 MOD
+      100 0 (3 % 0)
+      PUS 0 EQL IF {PUS FIZZ POP})
+    100 0
+
+    IGN <~ Check for Buzz ~>
+    (PUS 5 MOD
+      100 (5 % 0)
+      PUSH 0 EQL IF {PUS Buzz POP})
+
+    DUP
+    100 100
+    DEC
+    100 99
+    
+    IGN <~ Now what? ~>
+  }
+}
+
+IGN <~ LET's TRY FIZZBUZZ 2! ~>
+
+ARC <FIZZBUZZ2> {
+  IGN <~ Given N, the number at which we stop ~>
+
+  NEG
+  
+  DUP
+  100 100
+
+  WHILE {
+    DUP
+    100 100 100
+
+    SUB
+    100 0
+
+    IGN <~ Now we have i ~>
+    DUP
+    100 0 0
+
+    IGN <~ Check for Fizz ~>
+    (PUS 3 MOD
+      100 0 (3 % 0)
+      PUS 0 EQL IF {PUS FIZZ POP})
+    100 0
+
+    IGN <~ Check for Buzz ~>
+    (PUS 5 MOD
+      100 (5 % 0)
+      PUSH 0 EQL IF {PUS Buzz POP})
+
+    DUP
+    100 100
+    DEC
+    100 99
+    
+    IGN <~ Now what? ~>
+  }
+}
