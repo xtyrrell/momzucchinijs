@@ -2,7 +2,7 @@
   "name": "momzucchinijs",
   "version": "1.0.0",
   "description": "Why won't mom get me zucchin i from shop >:(",
-  "main": "index.js",
+  "main": "bin/index.js",
   "bin": {
     "momzucchinijs": "interpreter.js"
   },
@@ -14,7 +14,11 @@
   },
   "keywords": [
     "mom",
-    "zucchini"
+    "zucchini",
+    "stack",
+    "esolang",
+    "esoteric",
+    "language"
   ],
   "author": "ducky",
   "license": "ISC",
