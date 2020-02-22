@@ -1,10 +1,10 @@
 『ok im Borges now lol』
 
 IGN <~ FIZZBUZZ ~>
-
+IGN <~ This doesn't work yet! ~>
 ARC <FIZZBUZZ> {
   IGN <~ Given N, the number at which we stop ~>
-  
+
   DUP
   100 100
 
@@ -34,7 +34,7 @@ ARC <FIZZBUZZ> {
     100 100
     DEC
     100 99
-    
+
     IGN <~ Now what? ~>
   }
 }
@@ -45,7 +45,7 @@ ARC <FIZZBUZZ2> {
   IGN <~ Given N, the number at which we stop ~>
 
   NEG
-  
+
   DUP
   100 100
 
@@ -75,7 +75,7 @@ ARC <FIZZBUZZ2> {
     100 100
     DEC
     100 99
-    
+
     IGN <~ Now what? ~>
   }
 }
